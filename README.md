@@ -16,13 +16,17 @@ The first dataset is a subset of real data from the Million Song Dataset. Each f
 Here are the S3 links for each:
 
 Song data: `s3://udacity-dend/song_data`
+
 Log data: `s3://udacity-dend/log_data`
 
 ### Song Dataset
 The first dataset is a subset of real data from the Million Song Dataset. Each file is in JSON format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. For example, here are file paths to two files in this dataset.
+
 `song_data/A/B/C/TRABCEI128F424C983.json
 song_data/A/A/B/TRAABJL12903CDCF1A.json`
+
 And below is an example of what a single song file, TRAABJL12903CDCF1A.json, looks like.
+
 `{"num_songs": 1, "artist_id": "ARJIE2Y1187B994AB7", "artist_latitude": null, "artist_longitude": null, "artist_location": "", "artist_name": "Line Renaud", "song_id": "SOUPIRU12A6D4FA1E1", "title": "Der Kleine Dompfaff", "duration": 152.92036, "year": 0}`
 
 ### Log Dataset
@@ -32,6 +36,7 @@ The log files in the dataset you'll be working with are partitioned by year and 
 `log_data/2018/11/2018-11-12-events.json
 log_data/2018/11/2018-11-13-events.json`
 And below is an example of what a single log file, looks like.
+
 `{"artist":null,"auth":"Logged Out","firstName":null,"gender":null,"itemInSession":0,"lastName":null,"length":null,"level":"free","location":null,"method":"PUT","page":"Login","registration":null,"sessionId":52,"song":null,"status":307,"ts":1541207073796,"userAgent":null,"userId":""}`
 
 ### Data Warehouse schema
@@ -44,6 +49,7 @@ And below is an example of what a single log file, looks like.
 
 ## Project content
 `etl.ipynb` is where you'll load data from S3 into staging tables on Redshift and then process that data into your analytics tables on Redshift.
+
 `README.md` is where you'll provide discussion on your process and decisions for this ETL pipeline.
 
 ## Usage
